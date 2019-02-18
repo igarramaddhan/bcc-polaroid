@@ -1,0 +1,36 @@
+.post-list {
+  padding: 0;
+
+  .post-item {
+    display: flex;
+    list-style-type: none;
+    margin-bottom: 32px;
+  }
+}
+
+.floating-action-button {
+  width: 70px;
+  height: 70px;
+  background-color: #82b1ff;
+  border-radius: 50%;
+  box-shadow: 1px 5px 10px 0 rgba(20, 20, 20, 0.5);
+  transition: all 0.1s ease-in-out;
+  border: none;
+
+  font-size: 40px;
+  color: white;
+  text-align: center;
+  line-height: 0px;
+
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+
+  padding-bottom: 6px;
+  cursor: pointer;
+
+  &:hover {
+    box-shadow: 1px 5px 14px 0 rgba(20, 20, 20, 0.5);
+    transform: scale(1.05);
+  }
+}

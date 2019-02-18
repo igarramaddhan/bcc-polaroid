@@ -1,0 +1,28 @@
+@color: #f5adad;
+.layout-container {
+  flex: 1;
+  display: flex;
+  margin: 0 auto;
+  max-width: 670px;
+  min-width: 670px;
+  flex-direction: column;
+}
+
+.content-container {
+  flex: 1;
+  background: white;
+  padding: 1.3125rem;
+  position: relative;
+
+  .header {
+    color: @color;
+    margin-bottom: 8px;
+    margin-top: 0;
+  }
+
+  .sub-header {
+    font-size: 18px;
+    margin-top: 2px;
+    margin-bottom: 32px;
+  }
+}

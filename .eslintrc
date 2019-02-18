@@ -13,7 +13,7 @@
   },
   "rules": {
     "quotes": [1, "single", "avoid-escape"],
-    "indent": ["error", 2],
+    "indent": ["error", 2, { "SwitchCase": 1 }],
     "space-before-function-paren": [0, "always"]
   }
 }
