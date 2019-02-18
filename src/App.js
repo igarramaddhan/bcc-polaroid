@@ -1,14 +1,17 @@
 import React from 'react';
 import { hot } from 'react-hot-loader/root';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
+
+// import pages here
+import Index from './pages';
 
 function App() {
   return (
-    <div className="container">
-      <h2 className="welcome">Welcome to Your React App Starter</h2>
-      <p className="instruction">
-        You can modify anything here as you wish
-      </p>
-    </div>
+    <BrowserRouter>
+      <Switch>
+        <Route exact path="/" render={props => <Index {...props} />} />
+      </Switch>
+    </BrowserRouter>
   );
 }
 
